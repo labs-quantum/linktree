@@ -1,6 +1,8 @@
 ---
 import img from "../assets/img/profile_symbol.jpg"
+import fundo from "../assets/fundo.jpg"
 import { Github, InstagramIcon, MessageCircle } from "lucide-solid"
+
 ---
 
 <html lang="pt-br" data-theme="synthwave">
@@ -12,7 +14,8 @@ import { Github, InstagramIcon, MessageCircle } from "lucide-solid"
   </head>
   <body>
 
-	<div id="avatar" class="avatar w-52 h-64 mx-auto flex items-center justify-center pb-1">
+
+	<div id="avatar" class="avatar w-full h-56  flex items-center justify-center pb-1">
 		<div class="w-40  rounded-full">
 		  <img src={img.src} alt="xis preto" class="max-w-full max-h-full object-contain" />
 		</div>
@@ -23,7 +26,7 @@ import { Github, InstagramIcon, MessageCircle } from "lucide-solid"
 		</span>
 	</div>
 
-    <div id="social" class="flex w-auto h-full items-center justify-center flex-col gap-y-10 outline-none pb-5 ">
+    <div id="social" class="flex w-full h-full items-center justify-center flex-col gap-y-10 outline-none">
 		<div>
 			<button  class="btn bg-gray-500 w-60">
 				<a href="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">Instagram</a>
@@ -46,9 +49,9 @@ import { Github, InstagramIcon, MessageCircle } from "lucide-solid"
 		</div>
 	</div>
 
-	<div id="icons" class=" flex gap-x-4 w-full h-10 pt-10 items-center justify-center pb-10">
+	<div id="icons" class=" flex gap-x-6 max-w-full h-2 pt-10 items-center justify-center pb-10">
 		<div  class="">
-				<a href="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv"><InstagramIcon/></a>
+				<a href="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv"> <InstagramIcon /> </a>
 		</div>
 		<div class="">
 				<a href="https://github.com/labs-quantum"> <Github /> </a>
