@@ -1,18 +1,62 @@
 ---
-import { Camera } from "lucide-solid";
+import img from "../assets/img/profile_symbol.jpg"
+import { Github, InstagramIcon, MessageCircle } from "lucide-solid"
 ---
 
 <html lang="pt-br" data-theme="synthwave">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content="{Astro.generator}" />
+    <title>Quantum</title>
+  </head>
+  <body>
 
-		<Camera />
-	</body>
+
+	<div id="avatar" class="avatar w-full h-56  flex items-center justify-center pb-1">
+		<div class="w-40  rounded-full">
+		  <img src={img.src} alt="xis preto" class="max-w-full max-h-full object-contain" />
+		</div>
+	</div>
+	<div id="user-name" class="flex justify-center items-center pb-5 ">
+		<span>
+			@_quantum_oficial
+		</span>
+	</div>
+
+    <div id="social" class="flex w-full h-full items-center justify-center flex-col gap-y-10 outline-none">
+		<div>
+			<button  class="btn bg-gray-500 w-60">
+				<a href="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">Instagram</a>
+			</button>
+		</div>
+		<div>
+			<button  class="btn bg-gray-500 w-60">
+				<a href="">WhatsApp</a>
+			</button>
+		</div>
+		<div>
+			<button  class="btn bg-gray-500 w-60">
+				<a href="https://github.com/labs-quantum">GitHub</a>
+			</button>
+		</div>
+		<div>
+			<button  class="btn bg-gray-500 w-60">
+				<a href="">Conheçan nosso Site!!</a>
+			</button>
+		</div>
+	</div>
+	<div id="icons" class=" flex gap-x-6 max-w-full h-2 pt-10 items-center justify-center pb-10">
+		<div  class="">
+				<a href="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv"> <InstagramIcon /> </a>
+		</div>
+		<div class="">
+				<a href="https://github.com/labs-quantum"> <Github /> </a>
+		</div>
+		<div class="">
+				<a href=""> <MessageCircle /> </a>
+		</div>
+	</div>
+	</div>
+  </body>
 </html>
