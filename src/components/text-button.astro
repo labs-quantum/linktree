@@ -6,4 +6,6 @@ interface Props {
 const { link } = Astro.props
 ---
 
-<a class="btn w-60 bg-gray-500" href={link}>Instagram</a>
+<a class="btn w-60 bg-gray-500" href={link}>
+  <slot/>
+</a>
