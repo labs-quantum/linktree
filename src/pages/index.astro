@@ -3,6 +3,7 @@ import { Github, InstagramIcon, MessageCircle } from 'lucide-solid'
 import img from '../assets/img/profile_symbol.jpg'
 
 import TextButton from '@/components/text-button.astro'
+import SmallButton from '@/components/small-button.astro'
 ---
 
 <html lang="pt-br" data-theme="synthwave">
@@ -39,18 +40,20 @@ import TextButton from '@/components/text-button.astro'
       </TextButton>
 
     </div>
+
     <div id="icons" class="flex h-2 max-w-full items-center justify-center gap-x-6 pb-10 pt-10">
-      <div class="">
-        <a href="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">
+      
+      <SmallButton link='https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv'>
           <InstagramIcon />
-        </a>
-      </div>
-      <div class="">
-        <a href="https://github.com/labs-quantum"> <Github /> </a>
-      </div>
-      <div class="">
-        <a href=""> <MessageCircle /> </a>
-      </div>
+      </SmallButton>
+        
+      <SmallButton link='https://github.com/labs-quantum'> 
+        <Github /> 
+      </SmallButton>
+     
+      <SmallButton link=''>
+        <MessageCircle />
+      </SmallButton>
     </div>
   </body>
 </html>
