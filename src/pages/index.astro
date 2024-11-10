@@ -1,6 +1,8 @@
 ---
 import { Github, InstagramIcon, MessageCircle } from 'lucide-solid'
 import img from '../assets/img/profile_symbol.jpg'
+
+import TextButton from '@/components/text-button.astro'
 ---
 
 <html lang="pt-br" data-theme="synthwave">
@@ -21,11 +23,10 @@ import img from '../assets/img/profile_symbol.jpg'
     </div>
 
     <div id="social" class="flex h-full w-full flex-col items-center justify-center gap-y-10 outline-none">
-      <div>
-        <button class="btn w-60 bg-gray-500">
-          <a href="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">Instagram</a>
-        </button>
-      </div>
+      <TextButton link="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">
+        Instagram
+      </TextButton>
+
       <div>
         <button class="btn w-60 bg-gray-500">
           <a href="">WhatsApp</a>
