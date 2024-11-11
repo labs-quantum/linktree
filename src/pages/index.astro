@@ -1,9 +1,9 @@
 ---
-import { Github, InstagramIcon, MessageCircle } from 'lucide-solid'
+import { Github, Instagram } from 'lucide-solid'
 
 import Avatar from '@/components/avatar.astro'
-import TextButton from '@/components/text-button.astro'
 import SmallButton from '@/components/small-button.astro'
+import TextButton from '@/components/text-button.astro'
 ---
 
 <html lang="pt-br" data-theme="quantum">
@@ -14,36 +14,28 @@ import SmallButton from '@/components/small-button.astro'
     <title>quantum | linktree</title>
   </head>
 
-  <body class="text-center">
-    <main class="inline-grid gap-10 p-10">
-      <header>
+  <body class="text-center selection:bg-neutral selection:text-base-100">
+    <main class="inline-grid w-full gap-10 px-4 py-10 sm:w-auto">
+      <header class="space-y-2">
         <Avatar />
 
-        <div>
-          <span>quantum</span>
-        </div>
+        <span class="block font-medium">@quantum</span>
       </header>
 
-      <section class="inline-grid gap-4">
-        <TextButton link="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">
-          Conheça Nosso Trabalho!
-        </TextButton>
+      <section class="inline-grid gap-4 sm:w-60">
+        <TextButton link="">Conheça Nosso Trabalho!</TextButton>
         <TextButton link="">Fale Conosco!</TextButton>
-        <TextButton link="https://github.com/labs-quantum"> Descubra quem somos! </TextButton>
-        <TextButton link=""> Visite Nosso Site! </TextButton>
+        <TextButton link="">Descubra quem somos!</TextButton>
+        <TextButton link="">Visite Nosso Site!</TextButton>
       </section>
 
-      <footer class="inline-flex justify-center gap-4">
+      <footer class="inline-flex justify-center gap-2">
         <SmallButton link="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">
-          <InstagramIcon />
+          <Instagram strokeWidth={1.4} />
         </SmallButton>
 
         <SmallButton link="https://github.com/labs-quantum">
-          <Github />
-        </SmallButton>
-
-        <SmallButton link="">
-          <MessageCircle />
+          <Github strokeWidth={1.4} />
         </SmallButton>
       </footer>
     </main>

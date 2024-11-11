@@ -8,14 +8,7 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: [
-      {
-        quantum: {
-          'base-100': '#000000',
-          'base-content': '#e0ecff',
-        },
-      },
-    ],
+    themes: ['synthwave'],
     logs: false,
   },
 }

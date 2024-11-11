@@ -1,11 +1,11 @@
 ---
 interface Props {
-    link: string
-  }
-  
-  const { link } = Astro.props
+  link: string
+}
+
+const { link } = Astro.props
 ---
 
-<a href={link}>
-    <slot />
+<a class="btn btn-square btn-ghost" href={link}>
+  <slot />
 </a>
