@@ -1,7 +1,7 @@
 ---
 import { Github, InstagramIcon, MessageCircle } from 'lucide-solid'
-import img from '../assets/img/profile_symbol.jpg'
 
+import Avatar from '@/components/avatar.astro'
 import TextButton from '@/components/text-button.astro'
 import SmallButton from '@/components/small-button.astro'
 ---
@@ -10,50 +10,42 @@ import SmallButton from '@/components/small-button.astro'
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content="{Astro.generator}" />
-    <title>Quantum</title>
+    <meta name="generator" content={Astro.generator} />
+    <title>quantum | linktree</title>
   </head>
-  <body>
-    <div id="avatar" class="avatar flex h-56 w-full items-center justify-center pb-1">
-      <div class="w-40 rounded-full">
-        <img src={img.src} alt="xis preto" class="max-h-full max-w-full object-contain" />
-      </div>
-    </div>
-    <div id="user-name" class="flex items-center justify-center pb-5">
-      <span> quantum </span>
-    </div>
 
-    <div id="social" class="flex h-full w-full flex-col items-center justify-center gap-y-10 outline-none">
-      <TextButton link="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">
-        Conheça Nosso Trabalho!
-      </TextButton>
+  <body class="text-center">
+    <main class="inline-grid gap-10 p-10">
+      <header>
+        <Avatar />
 
-      <TextButton link="">
-        Fale Conosco!
-      </TextButton>
+        <div>
+          <span>quantum</span>
+        </div>
+      </header>
 
-      <TextButton link="https://github.com/labs-quantum">
-        Descubra quem somos!
-      </TextButton>
-      <TextButton link="">
-        Visite Nosso Site!
-      </TextButton>
+      <section class="inline-grid gap-4">
+        <TextButton link="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">
+          Conheça Nosso Trabalho!
+        </TextButton>
+        <TextButton link="">Fale Conosco!</TextButton>
+        <TextButton link="https://github.com/labs-quantum"> Descubra quem somos! </TextButton>
+        <TextButton link=""> Visite Nosso Site! </TextButton>
+      </section>
 
-    </div>
-
-    <div id="icons" class="flex h-2 max-w-full items-center justify-center gap-x-6 pb-10 pt-10">
-      
-      <SmallButton link='https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv'>
+      <footer class="inline-flex justify-center gap-4">
+        <SmallButton link="https://www.instagram.com/_quantum_oficial/profilecard/?igsh=bjV5djBmNTVpYmRv">
           <InstagramIcon />
-      </SmallButton>
-        
-      <SmallButton link='https://github.com/labs-quantum'> 
-        <Github /> 
-      </SmallButton>
-     
-      <SmallButton link=''>
-        <MessageCircle />
-      </SmallButton>
-    </div>
+        </SmallButton>
+
+        <SmallButton link="https://github.com/labs-quantum">
+          <Github />
+        </SmallButton>
+
+        <SmallButton link="">
+          <MessageCircle />
+        </SmallButton>
+      </footer>
+    </main>
   </body>
 </html>

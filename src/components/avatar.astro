@@ -1,0 +1,11 @@
+---
+import { Image } from 'astro:assets'
+
+import avatar from '@/assets/avatar.jpg'
+---
+
+<div class="avatar">
+  <picture class="w-32 overflow-hidden rounded-full">
+    <Image src={avatar} alt="logo" />
+  </picture>
+</div>
